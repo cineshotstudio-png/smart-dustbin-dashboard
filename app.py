@@ -191,7 +191,7 @@ folium.TileLayer(
     control=True
 ).add_to(m)
 
-    folium.Marker(
+folium.Marker(
         [start_lat, start_lon],
         popup="Collection Team",
         tooltip="Starting Point",
