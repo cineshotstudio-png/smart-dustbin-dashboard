@@ -190,7 +190,6 @@ folium.TileLayer(
     overlay=False,
     control=True
 ).add_to(m)_to(m)
-    )
 
     folium.Marker(
         [start_lat, start_lon],
