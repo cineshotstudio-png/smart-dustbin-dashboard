@@ -82,10 +82,10 @@ def read_sms(message):
 
 # DEFAULT DEMO LOCATION
 if "dust_lat" not in st.session_state:
-    st.session_state.dust_lat = 22.120000
+    st.session_state.dust_lat = 22.163441619476508
 
 if "dust_lon" not in st.session_state:
-    st.session_state.dust_lon = 84.030000
+    st.session_state.dust_lon = 84.28104928703394
 
 if "sms" not in st.session_state:
     st.session_state.sms = "DEMO: DUSTBIN FULL"
