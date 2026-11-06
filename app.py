@@ -170,9 +170,26 @@ left, right = st.columns([1.6, 1])
 with left:
     st.subheader("🗺️ Dustbin Collection Route")
 
-    map_object = folium.Map(
-        location=[dust_lat, dust_lon],
-        zoom_start=13
+    map_object = folium.LayerControl().addfolium.Map(
+    location=[dustbin_lat, dustbin_lon],
+    zoom_start=17,
+    tiles=None
+)
+
+folium.TileLayer(
+    tiles="https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+    attr="Esri, Maxar, Earthstar Geographics",
+    name="Satellite",
+    overlay=False,
+    control=True
+).add_to(m)
+
+folium.TileLayer(
+    "OpenStreetMap",
+    name="Street Map",
+    overlay=False,
+    control=True
+).add_to(m)_to(m)
     )
 
     folium.Marker(
