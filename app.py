@@ -170,7 +170,7 @@ left, right = st.columns([1.6, 1])
 with left:
     st.subheader("🗺️ Dustbin Collection Route")
 
-    map_object = folium.LayerControl().addfolium.Map(
+    m = folium.LayerControl().addfolium.Map(
     location=[dustbin_lat, dustbin_lon],
     zoom_start=17,
     tiles=None
